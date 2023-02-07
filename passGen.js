@@ -5,7 +5,7 @@ const includeLettersInput = document.querySelector('#include-letters');
 const passwordDisplay = document.querySelector('#password');
 const form = document.querySelector('form');
 
-const letters = 'abcdefghijklmnopqrstuvwxyz';
+const letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const numbers = '0123456789';
 const symbols = '!@#$%^&*()_+-=[]{}|;:\'",.<>/?\\';
 
