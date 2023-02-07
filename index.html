@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  
+
+<head>
     <meta charset="UTF-8">
     <title>PassGen-Pro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
   <body>
+
+    <!-- Header Section -->
+
     <header class="bg-dark text-white py-3">
       <div class="container">
         <h1 class="text-center">PassGen-Pro</h1>
       </div>
     </header>
+    <!-- Password Generator Section -->
     <main class="container my-5">
       <h2 class="text-center mb-5">Password Generator</h2>
       <form>
         <div class="form-group">
+            <!-- Password length with minimum (8) and maximum (64) specifications -->
           <label for="password-length">Password Length:</label>
           <input type="number" class="form-control" id="password-length" min="8" max="64">
         </div>
         <div class="form-group form-check">
+            <!-- Checkbox for "include numbers" option -->
           <input type="checkbox" class="form-check-input" id="include-numbers">
           <label class="form-check-label" for="include-numbers">Include Numbers</label>
         </div>
         <div class="form-group form-check">
+            <!-- Checkbox for "include symbols" option -->
           <input type="checkbox" class="form-check-input" id="include-symbols">
           <label class="form-check-label" for="include-symbols">Include Symbols</label>
         </div>
         <div class="form-group form-check">
+            <!-- Checkbox for "include letters" option -->
           <input type="checkbox" class="form-check-input" id="include-letters">
           <label class="form-check-label" for="include-letters">Include Letters</label>
         </div>
+            <!-- Generate password button -->
         <button type="submit" class="btn btn-primary">Generate Password</button>
       </form>
       
-      
+            <!-- Generated Password section with Copy to Clipboard button -->
       <div id="generated-password" class="my-5">
         <p>Generated Password: <span id="password"></span></p>
         <button id="copy-to-clipboard" class="btn btn-secondary">Copy to Clipboard</button>
       </div>
     </main>
+
+            <!-- Footer section -->
    
     <footer class="bg-dark text-white py-3">
       <div class="container">
