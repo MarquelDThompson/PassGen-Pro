@@ -33,3 +33,16 @@ form.addEventListener('submit', e => {
   
   passwordDisplay.textContent = password;
 });
+
+
+const copyToClipboardButton = document.querySelector('#copy-to-clipboard');
+
+copyToClipboardButton.addEventListener('click', e => {
+  const password = passwordDisplay.textContent;
+  const tempInput = document.createElement('input');
+  tempInput.value = password;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+});
