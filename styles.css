@@ -1,18 +1,75 @@
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+    background-color: #f2f2f2;
   }
   
+  /* Style for header and footer */
+  header, footer {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Style for form */
+  form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 0 auto;
+    font-size: 1.rem;
+  }
+  
+  /* Style for password length input */
   input[type="number"] {
     width: 150px;
     padding: 0.5rem;
-    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
   
+  /* Style for generated password section */
   #generated-password {
     text-align: center;
-    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
   }
   
+  /* Style for generate password button */
+  button[type="submit"] {
+    margin-top: 1rem;
+  }
   
+  /* Style for copy to clipboard button */
+  #copy-to-clipboard {
+    margin-top: 1rem;
+  }
+  
+  /* Style for footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Media query for larger screen size */
+  @media (min-width: 768px) {
+    footer {
+      padding: 2rem;
+    }
+  }
+  
+  /* Style for html and body to make footer stick to bottom */
+  html, body {
+    height: 100%;
+  }
+  
+  /* Style for body to use flexbox */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for main section to take up remaining space */
+  main {
+    flex: 1;
+  }
